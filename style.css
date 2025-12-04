@@ -4,7 +4,7 @@
   --green-light: #d8f9e6;
   --white: #fff;
   --gray: #f4f7f6;
-  --shadow: 0 2px 8px rgba(41, 110, 67, 0.06);
+  --shadow: 0 2px 8px rgba(41, 110, 67, 0.04);
 }
 body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -219,6 +219,20 @@ button[type="submit"] {
 
 .contact-form textarea {
   resize: vertical;
+}
+
+/* Backend Not Created Message */
+.backend-note {
+  background: #fffde7;
+  border-left: 4px solid #44b96e;
+  color: #857d2e;
+  font-size: 1.05em;
+  padding: 0.7em 1em;
+  border-radius: 0.9em;
+  margin-bottom: 1.3em;
+  margin-top: .2em;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(41, 110, 67, 0.04);
 }
 
 /* FOOTER */
