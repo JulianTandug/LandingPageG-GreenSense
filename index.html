@@ -1,168 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GreenSense - Smart Insights for Small Greenhouse Farmers</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenSense – Smart Insights for Small Greenhouse Farmers</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Inter:400,600,800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#home" class="brand">GreenSense</a>
-      <ul class="nav-links">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#dashboard">Demo</a></li>
-        <li><a href="#register">Sign Up</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <header class="header" id="home">
-    <div class="container">
-      <h1>GreenSense</h1>
-      <p class="subtitle">Smart Insights for Small Greenhouse Farmers</p>
-      <a href="#register" class="btn btn-primary">Get Started</a>
-    </div>
-  </header>
-  <main>
-    <section class="intro" id="overview">
-      <div class="container section-block">
-        <h2>Overview</h2>
-        <p>
-          GreenSense is a simple platform built for small greenhouse farmers. Stop losing money on waste and guesswork. Start tracking your crops, expenses, and sales—so you know where to focus and what brings the best results.
-        </p>
-        <ul class="checklist">
-          <li>Reduce waste & maximize profits</li>
-          <li>Get instant, actionable advice</li>
-          <li>Plan smarter for every season</li>
+  <!-- HERO SECTION -->
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="brand">GreenSense</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#visual">Visual</a></li>
+          <li><a href="#details">Details</a></li>
+          <li><a href="#cta">Sign Up</a></li>
         </ul>
       </div>
-    </section>
-    <section class="features" id="features">
-      <div class="container section-block">
-        <h2>Features</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <span class="feature-icon">📈</span>
-            <h3>Simple Transaction Tracking</h3>
-            <p>Log every purchase and sale in just seconds. Your data is safe and always accessible.</p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">🤖</span>
-            <h3>AI Insights</h3>
-            <p>Instantly see which crops are most profitable, where you can save, and what trends to watch.</p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">⚡</span>
-            <h3>Alerts & Suggestions</h3>
-            <p>Get notified if a crop underperforms or costs spike—so you can take action right away.</p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">📊</span>
-            <h3>Clear, Modern Reports</h3>
-            <p>Simple, visual charts and summaries—no confusing spreadsheets or calculations required.</p>
-          </div>
-        </div>
+    </nav>
+    <div class="hero-inner">
+      <div class="hero-caption">
+        <h1>Grow Smarter with GreenSense</h1>
+        <p class="subheadline">
+          The simple platform that helps small greenhouse farmers turn everyday transactions into profit and insight.
+        </p>
+        <a href="#cta" class="btn btn-primary">Try GreenSense Now</a>
       </div>
-    </section>
-    <section class="dashboard-demo" id="dashboard">
-      <div class="container section-block">
-        <h2>Demo Dashboard</h2>
-        <div class="dashboard-grid">
-          <div class="stats-card">
-            <h4>Crops Overview</h4>
-            <div class="stat">
-              <span class="stat-label">Tomatoes:</span>
-              <span class="stat-value">₱8,000 profit</span>
-            </div>
-            <div class="stat">
-              <span class="stat-label">Basil:</span>
-              <span class="stat-value">₱3,500 profit</span>
-            </div>
-            <div class="stat">
-              <span class="stat-label">Lettuce:</span>
-              <span class="stat-value">₱2,800 profit</span>
-            </div>
-          </div>
-          <div class="input-card">
-            <h4>Quick Transaction Entry</h4>
-            <form>
-              <div class="form-row">
-                <label for="type">Type</label>
-                <select id="type" name="type">
-                  <option value="sale">Sale</option>
-                  <option value="purchase">Purchase</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label for="item">Item</label>
-                <input type="text" id="item" name="item" placeholder="e.g. Tomatoes">
-              </div>
-              <div class="form-row">
-                <label for="amount">Amount</label>
-                <input type="number" id="amount" name="amount" min="0" placeholder="₱">
-              </div>
-              <div class="form-row">
-                <label for="notes">Notes</label>
-                <input type="text" id="notes" name="notes" placeholder="Optional">
-              </div>
-              <button type="submit" class="btn btn-secondary" type="button" onclick="alert('Backend not created yet :D');return false;">Add Transaction</button>
-            </form>
-          </div>
-        </div>
+      <div class="hero-image">
+        <img src="FARMPIC.JPG" alt="GreenSense Farm Banner" />
       </div>
-    </section>
-    <section class="register" id="register">
-      <div class="container section-block">
-        <h2>Sign Up</h2>
-        <p>Start using GreenSense now, totally free for small greenhouse growers.</p>
-        <div class="backend-note">Backend not created yet :D</div>
-        <form class="register-form" onsubmit="alert('Backend not created yet :D'); return false;">
-          <div class="form-row">
-            <label for="reg-name">Name</label>
-            <input type="text" id="reg-name" name="reg-name" required placeholder="Your Name">
-          </div>
-          <div class="form-row">
-            <label for="reg-email">Email</label>
-            <input type="email" id="reg-email" name="reg-email" required placeholder="your@email.com">
-          </div>
-          <div class="form-row">
-            <label for="reg-password">Password</label>
-            <input type="password" id="reg-password" name="reg-password" required placeholder="Create Password">
-          </div>
-          <button type="submit" class="btn btn-primary">Register</button>
-        </form>
+    </div>
+  </header>
+
+  <!-- FEATURES / HIGHLIGHTS SECTION -->
+  <section class="features-section" id="features">
+    <h2>Key Features</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <span class="feature-icon">📊</span>
+        <h3>Instant Dashboard</h3>
+        <p>Track profits, costs, and crop health at a glance without spreadsheets.</p>
       </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container section-block">
-        <h2>Contact Us</h2>
-        <p>Questions or feedback? Reach out and we’ll respond ASAP!</p>
-        <div class="backend-note">Backend not created yet :D</div>
-        <form class="contact-form" onsubmit="alert('Backend not created yet :D'); return false;">
-          <div class="form-row">
-            <label for="contact-name">Name</label>
-            <input type="text" id="contact-name" name="contact-name" required>
-          </div>
-          <div class="form-row">
-            <label for="contact-email">Email</label>
-            <input type="email" id="contact-email" name="contact-email" required>
-          </div>
-          <div class="form-row">
-            <label for="contact-msg">Message</label>
-            <textarea id="contact-msg" name="contact-msg" required rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-secondary">Send Message</button>
-        </form>
+      <div class="feature-item">
+        <span class="feature-icon">⏱️</span>
+        <h3>Simple Recording</h3>
+        <p>Log purchases and sales easily from your phone or computer.</p>
       </div>
-    </section>
-  </main>
+      <div class="feature-item">
+        <span class="feature-icon">🤖</span>
+        <h3>Smart AI Advice</h3>
+        <p>Get real-time guidance on what, when, and how much to plant.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">⚡</span>
+        <h3>Alerts & Reports</h3>
+        <p>Be notified of profit spikes, waste risks, or cost issues right away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISUAL ELEMENT SECTION -->
+  <section class="visual-section" id="visual">
+    <div class="visual-container">
+      <div class="visual-img">
+        <img src="FARMPIC.JPG" alt="Product mock-up: GreenSense app on phone and desktop" />
+      </div>
+      <div class="visual-desc">
+        <h2>See Your Farm Like Never Before</h2>
+        <p>
+          GreenSense’s modern dashboard visualizes your farm performance so you can make decisions with confidence. From profit trends to smart planting suggestions—everything you need to grow, in one place.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMATION/DETAILS SECTION -->
+  <section class="details-section" id="details">
+    <h2>Why GreenSense?</h2>
+    <div class="details-grid">
+      <div class="details-block">
+        <h3>Reduce Financial Blind Spots</h3>
+        <p>Know the true cost and profit per crop. Never guess where your money goes.</p>
+      </div>
+      <div class="details-block">
+        <h3>Minimize Overplanting & Waste</h3>
+        <p>Predict what to grow based on historical sales and clear data.</p>
+      </div>
+      <div class="details-block">
+        <h3>Plan Ahead</h3>
+        <p>Plan your next season, avoid cash flow headaches, and select crops for maximum profit.</p>
+      </div>
+      <div class="details-block">
+        <h3>For Small Growers First</h3>
+        <p>Unlike complex agri-software, GreenSense is built to be simple, actionable, and stress-free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section" id="cta">
+    <div class="cta-content">
+      <h2>Start Growing Smarter Today!</h2>
+      <p>Sign up for early access. (Backend not created yet :D)</p>
+      <form class="cta-form" onsubmit="alert('Backend not created yet :D'); return false;">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit" class="btn btn-primary">Sign Up Free</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <small>© 2025 GreenSense • Empowering Small Farmers</small>
+    <div class="footer-content">
+      <span>© 2025 GreenSense</span>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#cta">Sign Up</a>
+        <a href="#visual">Gallery</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><span>🌱</span></a>
+        <a href="#" aria-label="Instagram"><span>🌿</span></a>
+        <a href="#" aria-label="Email"><span>✉️</span></a>
+      </div>
     </div>
   </footer>
 </body>
